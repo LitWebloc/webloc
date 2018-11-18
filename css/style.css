@@ -1,0 +1,76 @@
+/* line 2, ../scss/_markup.scss */
+tml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; outline: none; }
+
+/* line 11, ../scss/_markup.scss */
+html { height: 101%; }
+
+/* always display scrollbars */
+/* line 13, ../scss/_markup.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+/* line 14, ../scss/_markup.scss */
+ol, ul { list-style: none; }
+
+/* line 16, ../scss/_markup.scss */
+blockquote, q { quotes: none; }
+
+/* line 17, ../scss/_markup.scss */
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+/* line 19, ../scss/_markup.scss */
+input { outline: none; }
+
+/* line 21, ../scss/_markup.scss */
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* line 22, ../scss/_markup.scss */
+img { border: 0; max-width: 100%; }
+
+/* line 24, ../scss/_markup.scss */
+canvas { display: block; vertical-align: bottom; }
+
+/* line 26, ../scss/_markup.scss */
+a { text-decoration: none; }
+
+/* line 30, ../scss/_markup.scss */
+body { font-size: 62.5%; line-height: 1; font-family: 'Montserrat', Arial, Tahoma, Verdana, sans-serif; }
+
+/* line 31, ../scss/_markup.scss */
+strong { font-weight: bold; }
+
+/* line 34, ../scss/_markup.scss */
+.bgSvg1 { background-image: url(img/svg/bg_components/Vector1.svg); width: 500px; height: 500px; }
+
+/* line 39, ../scss/_markup.scss */
+.ab { position: absolute; top: 0; right: 0; }
+
+/* line 45, ../scss/_markup.scss */
+.c { height: 100%; width: 100%; border-radius: 100%; margin-left: -80px; }
+
+/* line 51, ../scss/_markup.scss */
+.container { position: absolute; display: inline-block; height: 800px; margin: 0; top: 0; right: -55%; }
+
+/* line 59, ../scss/_markup.scss */
+.transformed { overflow: hidden; background: #f4f4f4; box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.1); transform: rotate(-19.33deg); }
+
+/* line 65, ../scss/_markup.scss */
+.block { overflow: hidden; width: 100vw; height: 100vh; position: absolute; top: 0; left: 0; }
+
+/* line 1, ../scss/_particle.scss */
+#particles-js canvas { position: absolute; z-index: -1; top: -30%; left: -46.3%; transform: rotate(20deg); }
+
+/* ---- stats.js ---- */
+/* line 9, ../scss/_particle.scss */
+.count-particles { background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; }
+
+/* line 9, ../scss/_particle.scss */
+.js-count-particles { font-size: 1.1em; }
+
+/* line 9, ../scss/_particle.scss */
+#stats, .count-particles { -webkit-user-select: none; margin-top: 5px; margin-left: 5px; }
+
+/* line 9, ../scss/_particle.scss */
+#stats { border-radius: 3px 3px 0 0; overflow: hidden; }
+
+/* line 9, ../scss/_particle.scss */
+.count-particles { border-radius: 0 0 3px 3px; }
