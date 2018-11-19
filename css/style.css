@@ -45,32 +45,38 @@ strong { font-weight: bold; }
 .ab { position: absolute; top: 0; right: 0; }
 
 /* line 45, ../scss/_markup.scss */
-.c { height: 100%; width: 100%; border-radius: 100%; margin-left: -80px; }
+.c { height: 600px; width: 1200px; border-radius: 100%; }
 
-/* line 51, ../scss/_markup.scss */
-.container { position: absolute; display: inline-block; height: 800px; margin: 0; top: 0; right: -55%; }
+/* line 50, ../scss/_markup.scss */
+.container { position: absolute; display: inline-block; margin: 0; top: 50px; right: -400px; }
 
-/* line 59, ../scss/_markup.scss */
+/* line 57, ../scss/_markup.scss */
 .transformed { overflow: hidden; background: #f4f4f4; box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.1); transform: rotate(-19.33deg); }
 
-/* line 65, ../scss/_markup.scss */
-.block { overflow: hidden; width: 100vw; height: 100vh; position: absolute; top: 0; left: 0; }
+/* line 63, ../scss/_markup.scss */
+.block { overflow: hidden; width: 100%; height: 800px; position: absolute; top: 0; z-index: -1; }
 
-/* line 1, ../scss/_particle.scss */
-#particles-js canvas { position: absolute; z-index: -1; top: -30%; left: -46.3%; transform: rotate(20deg); }
+/* line 72, ../scss/_markup.scss */
+#particles-js canvas { position: absolute; z-index: -2; }
 
-/* ---- stats.js ---- */
-/* line 9, ../scss/_particle.scss */
-.count-particles { background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; }
+/* line 77, ../scss/_markup.scss */
+nav a { margin: 32px; font-size: 12px; text-transform: uppercase; color: #000; }
 
-/* line 9, ../scss/_particle.scss */
-.js-count-particles { font-size: 1.1em; }
+/* line 84, ../scss/_markup.scss */
+header { display: flex; align-items: center; justify-content: space-between; padding: 40px 95px; }
+/* line 89, ../scss/_markup.scss */
+header buttom { text-transform: uppercase; background: #fff; display: block; padding: 8px 6px 6px 5px; border-radius: 100%; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }
+/* line 97, ../scss/_markup.scss */
+header img { height: 24px; display: inline-block; vertical-align: -5px; }
 
-/* line 9, ../scss/_particle.scss */
-#stats, .count-particles { -webkit-user-select: none; margin-top: 5px; margin-left: 5px; }
+/* line 103, ../scss/_markup.scss */
+.logo p { font-size: 18px; text-transform: uppercase; color: #F39A4A; display: inline-block; }
 
-/* line 9, ../scss/_particle.scss */
-#stats { border-radius: 3px 3px 0 0; overflow: hidden; }
+/* line 109, ../scss/_markup.scss */
+.logo small { font-size: 12px; color: #F39A4A; }
 
-/* line 9, ../scss/_particle.scss */
-.count-particles { border-radius: 0 0 3px 3px; }
+/* line 113, ../scss/_markup.scss */
+.orange { color: #F39A4A; font-weight: 600; }
+
+/* line 117, ../scss/_markup.scss */
+.no_attention { opacity: .7; }
