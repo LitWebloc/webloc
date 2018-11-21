@@ -1,119 +1,170 @@
 //Сброс стандартных стилей браузеров
-tml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  outline: none;
+tml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	outline: none;
 }
-html { height: 101%; } /* always display scrollbars */
+html{ height: 101%; }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
-ol, ul { list-style: none; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{ display: block; }
+ol, ul{ list-style: none; }
 
-blockquote, q { quotes: none; }
-blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+blockquote, q{ quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after{ content: ''; content: none; }
 
-input { outline: none; }
+input{ outline: none; }
 
-table { border-collapse: collapse; border-spacing: 0; }
-img { border: 0; max-width: 100%; }
+table{ border-collapse: collapse; border-spacing: 0; }
+img{ border: 0; max-width: 100%; }
 
 canvas{ display: block; vertical-align: bottom; }
 
-a { text-decoration: none; }
-//a:hover { text-decoration: underline; }
+a{ text-decoration: none; }
 //Сброс стандартных стилей браузеров //
 //Настройка шрифтов
 body { font-size: 62.5%; line-height: 1; font-family: 'Montserrat', Arial, Tahoma, Verdana, sans-serif; }
 strong { font-weight: bold; }
 //Настройка шрифтов//
-//BG Components
-.bgSvg1{
-	background-image: url(img/svg/bg_components/Vector1.svg);
-	width: 500px;
-	height: 500px;
+h1, h2{ margin-bottom: 17px; }
+h1{
+	font-size: 24px;
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
 }
-.ab{
-	position: absolute;
-	top: 0;
-	right: 0;
+p{
+	font-size: 14px;
+	font-weight: 300;
+	line-height: normal;
+	letter-spacing: 0.05em;
+	color: #666666;
 }
-//BG Components//
-.c{
-	height: 600px;
-	width: 1200px;
-	border-radius: 100%;
-}
-.container {
-	position: absolute;
-	display: inline-block;
-	margin: 0;
-	top: 50px;
-	right: -400px;
-}
-.transformed {
-	overflow: hidden;
-	background: #f4f4f4;
-	box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.1);
-	transform: rotate(-19.33deg);
-}
-.block{
-	overflow: hidden;
-	width: 100%;
-	height: 800px;
-	position: absolute;
-	top: 0;
-	z-index: -1;
+a{
+	&.btn{
+		display: inline-block;
+		margin-top: 65px;
+		padding: 12px 25px;
+		font-size: 12px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		border-radius: 50px;
+		box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+		transition: .3s;
+		color: #FFFFFF;
+	}
+	&.gradient{
+		background: linear-gradient(90deg, #F39A4A 0%, #F69173 100%);
+	}
 }
 
-#particles-js canvas{
-	position: absolute;
-	z-index: -2;
-}
-nav{
-	a{
-		margin: 32px;
-		font-size: 12px;
-		text-transform: uppercase;
-		color: #000;
-	}
-}
-header{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 40px 95px;
-	buttom{
-		text-transform: uppercase;
-		background: #fff;
-		display: block;
+buttom{
+	display: inline-block;
+	cursor: pointer;
+	&.btn{
 		padding: 8px 6px 6px 5px;
+		text-transform: uppercase;
 		border-radius: 100%;
 		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+		transition: .3s;
+		background: #fff;
 	}
+}
+
+a:hover, buttom:hover{ box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25); }
+
+header{
+	margin: 40px 95px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	z-index: 2;
 	img{
 		height: 24px;
 		display: inline-block;
 		vertical-align: -5px;
 	}
 }
+
+nav{
+	a{
+		margin: 32px;
+		font-size: 12px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: #000;
+	}
+}
+
 .logo p{
-font-size: 18px;
-text-transform: uppercase;
-color: #F39A4A;
-display: inline-block;
+	display: inline-block;
+	font-size: 18px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #F39A4A;
 }
 .logo small{
-font-size: 12px;
-color: #F39A4A;
-}
-.orange{
+	font-size: 12px;
 	color: #F39A4A;
-	font-weight: 600;
 }
+
+.orange{
+	font-weight: 600;
+	color: #F39A4A;
+}
+
 .no_attention{
 	opacity: .7;
+}
+
+//ParticleJS
+.particle-container{
+	width: 100%;
+	height: 800px;
+	position: absolute;
+	top: 0;
+	overflow: hidden;
+	z-index: 0;
+	img{
+		position: absolute;
+		top: 25%;
+		right: 15%;
+		z-index: 2;
+	}
+}
+.particle-container-size{
+	height: 600px;
+	width: 1200px;
+	border-radius: 100%;
+}
+.container {
+	margin: 0;
+	display: inline-block;
+	position: absolute;
+	top: 50px;
+	left: 60%;
+}
+.particle-container-transformed{
+	overflow: hidden;
+	box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.1);
+	transform: rotate(-19.33deg);
+	background: #f4f4f4;
+}
+
+#particles-js canvas{
+	position: absolute;
+}
+//ParticleJS//
+
+.info-block{
+	margin-top: 15%;
+	margin-left: 10%;
+	display: inline-block;
+	position: relative;
+	z-index: 2;
 }

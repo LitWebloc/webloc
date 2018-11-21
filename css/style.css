@@ -4,7 +4,6 @@ tml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockqu
 /* line 11, ../scss/_markup.scss */
 html { height: 101%; }
 
-/* always display scrollbars */
 /* line 13, ../scss/_markup.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
@@ -32,51 +31,70 @@ canvas { display: block; vertical-align: bottom; }
 /* line 26, ../scss/_markup.scss */
 a { text-decoration: none; }
 
-/* line 30, ../scss/_markup.scss */
+/* line 29, ../scss/_markup.scss */
 body { font-size: 62.5%; line-height: 1; font-family: 'Montserrat', Arial, Tahoma, Verdana, sans-serif; }
 
-/* line 31, ../scss/_markup.scss */
+/* line 30, ../scss/_markup.scss */
 strong { font-weight: bold; }
 
-/* line 34, ../scss/_markup.scss */
-.bgSvg1 { background-image: url(img/svg/bg_components/Vector1.svg); width: 500px; height: 500px; }
+/* line 32, ../scss/_markup.scss */
+h1, h2 { margin-bottom: 17px; }
 
-/* line 39, ../scss/_markup.scss */
-.ab { position: absolute; top: 0; right: 0; }
+/* line 33, ../scss/_markup.scss */
+h1 { font-size: 24px; font-weight: 500; line-height: normal; letter-spacing: 0.1em; text-transform: uppercase; }
 
-/* line 45, ../scss/_markup.scss */
-.c { height: 600px; width: 1200px; border-radius: 100%; }
+/* line 40, ../scss/_markup.scss */
+p { font-size: 14px; font-weight: 300; line-height: normal; letter-spacing: 0.05em; color: #666666; }
 
-/* line 50, ../scss/_markup.scss */
-.container { position: absolute; display: inline-block; margin: 0; top: 50px; right: -400px; }
+/* line 48, ../scss/_markup.scss */
+a.btn { display: inline-block; margin-top: 65px; padding: 12px 25px; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; border-radius: 50px; box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25); transition: .3s; color: #FFFFFF; }
+/* line 60, ../scss/_markup.scss */
+a.gradient { background: linear-gradient(90deg, #F39A4A 0%, #F69173 100%); }
 
-/* line 57, ../scss/_markup.scss */
-.transformed { overflow: hidden; background: #f4f4f4; box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.1); transform: rotate(-19.33deg); }
+/* line 65, ../scss/_markup.scss */
+buttom { display: inline-block; cursor: pointer; }
+/* line 68, ../scss/_markup.scss */
+buttom.btn { padding: 8px 6px 6px 5px; text-transform: uppercase; border-radius: 100%; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); transition: .3s; background: #fff; }
 
-/* line 63, ../scss/_markup.scss */
-.block { overflow: hidden; width: 100%; height: 800px; position: absolute; top: 0; z-index: -1; }
+/* line 78, ../scss/_markup.scss */
+a:hover, buttom:hover { box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25); }
 
-/* line 72, ../scss/_markup.scss */
-#particles-js canvas { position: absolute; z-index: -2; }
-
-/* line 77, ../scss/_markup.scss */
-nav a { margin: 32px; font-size: 12px; text-transform: uppercase; color: #000; }
-
-/* line 84, ../scss/_markup.scss */
-header { display: flex; align-items: center; justify-content: space-between; padding: 40px 95px; }
-/* line 89, ../scss/_markup.scss */
-header buttom { text-transform: uppercase; background: #fff; display: block; padding: 8px 6px 6px 5px; border-radius: 100%; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }
-/* line 97, ../scss/_markup.scss */
+/* line 80, ../scss/_markup.scss */
+header { margin: 40px 95px; display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 2; }
+/* line 87, ../scss/_markup.scss */
 header img { height: 24px; display: inline-block; vertical-align: -5px; }
 
-/* line 103, ../scss/_markup.scss */
-.logo p { font-size: 18px; text-transform: uppercase; color: #F39A4A; display: inline-block; }
+/* line 95, ../scss/_markup.scss */
+nav a { margin: 32px; font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; color: #000; }
 
-/* line 109, ../scss/_markup.scss */
+/* line 104, ../scss/_markup.scss */
+.logo p { display: inline-block; font-size: 18px; letter-spacing: 0.1em; text-transform: uppercase; color: #F39A4A; }
+
+/* line 111, ../scss/_markup.scss */
 .logo small { font-size: 12px; color: #F39A4A; }
 
-/* line 113, ../scss/_markup.scss */
-.orange { color: #F39A4A; font-weight: 600; }
+/* line 116, ../scss/_markup.scss */
+.orange { font-weight: 600; color: #F39A4A; }
 
-/* line 117, ../scss/_markup.scss */
+/* line 121, ../scss/_markup.scss */
 .no_attention { opacity: .7; }
+
+/* line 126, ../scss/_markup.scss */
+.particle-container { width: 100%; height: 800px; position: absolute; top: 0; overflow: hidden; z-index: 0; }
+/* line 133, ../scss/_markup.scss */
+.particle-container img { position: absolute; top: 25%; right: 15%; z-index: 2; }
+
+/* line 140, ../scss/_markup.scss */
+.particle-container-size { height: 600px; width: 1200px; border-radius: 100%; }
+
+/* line 145, ../scss/_markup.scss */
+.container { margin: 0; display: inline-block; position: absolute; top: 50px; left: 60%; }
+
+/* line 152, ../scss/_markup.scss */
+.particle-container-transformed { overflow: hidden; box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.1); transform: rotate(-19.33deg); background: #f4f4f4; }
+
+/* line 159, ../scss/_markup.scss */
+#particles-js canvas { position: absolute; }
+
+/* line 164, ../scss/_markup.scss */
+.info-block { margin-top: 15%; margin-left: 10%; display: inline-block; position: relative; z-index: 2; }
