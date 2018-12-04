@@ -4,7 +4,7 @@ $c-w: #fff;
 $c-b:#000;
 $c-g:#666666;
 //Сброс стандартных стилей браузеров
-tml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
+tml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -31,7 +31,7 @@ canvas{ display: block; vertical-align: bottom; }
 a{ text-decoration: none; }
 //Сброс стандартных стилей браузеров //
 //Настройка шрифтов
-body { font-size: 62.5%; line-height: 1; font-family: 'Montserrat', Arial, Tahoma, Verdana, sans-serif; }
+body { font-size: 62.5%; line-height: 1; font-family: 'Montserrat', sans-serif; }
 strong { font-weight: bold; }
 //Настройка шрифтов//
 h1, h2{ margin-bottom: 17px; }
@@ -207,15 +207,38 @@ nav{
 }
 
 .left-img-svg{
-	position: relative;
+	position: absolute;
+	left: 100px;
+	margin-top: 260px;
+	z-index: 2;
+}
+
+.left-svg{
+	.info-block{
+		margin-left: 33vw;
+		margin-top: 450px;
+	}
+}
+
+.right-svg-bg{
+	position: absolute;
+	right: 0;
+	margin-top: 170px;
+}
+
+.right-img-svg{
+	position: absolute;
+	right: 70px;
 	margin-top: 250px;
 	z-index: 2;
 }
-.parallaxie{
-	min-height: 360px;
-}
-.left-svg{
+
+.right-svg{
 	.info-block{
-		margin-left: 60px;
+		margin-right: 60px;
+		margin-top: 350px;
 	}
+}
+.li b{
+	margin-right: 10px;
 }

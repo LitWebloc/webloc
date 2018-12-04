@@ -1,5 +1,5 @@
 /* line 7, ../scss/_markup.scss */
-tml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; outline: none; }
+tml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; outline: none; }
 
 /* line 16, ../scss/_markup.scss */
 html { height: 101%; }
@@ -32,7 +32,7 @@ canvas { display: block; vertical-align: bottom; }
 a { text-decoration: none; }
 
 /* line 34, ../scss/_markup.scss */
-body { font-size: 62.5%; line-height: 1; font-family: 'Montserrat', Arial, Tahoma, Verdana, sans-serif; }
+body { font-size: 62.5%; line-height: 1; font-family: 'Montserrat', sans-serif; }
 
 /* line 35, ../scss/_markup.scss */
 strong { font-weight: bold; }
@@ -113,10 +113,19 @@ nav a:hover:before { width: 100%; left: 0; transition: .3s; background: #F39A4A;
 .left-svg-bg { position: absolute; left: 0; margin-top: 200px; }
 
 /* line 209, ../scss/_markup.scss */
-.left-img-svg { position: relative; margin-top: 250px; z-index: 2; }
+.left-img-svg { position: absolute; left: 100px; margin-top: 260px; z-index: 2; }
 
-/* line 214, ../scss/_markup.scss */
-.parallaxie { min-height: 360px; }
+/* line 217, ../scss/_markup.scss */
+.left-svg .info-block { margin-left: 33vw; margin-top: 450px; }
 
-/* line 218, ../scss/_markup.scss */
-.left-svg .info-block { margin-left: 60px; }
+/* line 223, ../scss/_markup.scss */
+.right-svg-bg { position: absolute; right: 0; margin-top: 170px; }
+
+/* line 229, ../scss/_markup.scss */
+.right-img-svg { position: absolute; right: 70px; margin-top: 250px; z-index: 2; }
+
+/* line 237, ../scss/_markup.scss */
+.right-svg .info-block { margin-right: 60px; margin-top: 350px; }
+
+/* line 242, ../scss/_markup.scss */
+.li b { margin-right: 10px; }
